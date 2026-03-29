@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodMate 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sparkles -->
+<div class="sparkle" style="left:5%; animation-duration: 8s;"></div>
+<div class="sparkle" style="left:15%; animation-duration: 6s;"></div>
+<div class="sparkle" style="left:25%; animation-duration: 9s;"></div>
+<div class="sparkle" style="left:35%; animation-duration: 7s;"></div>
+<div class="sparkle" style="left:45%; animation-duration: 10s;"></div>
+<div class="sparkle" style="left:55%; animation-duration: 8s;"></div>
+<div class="sparkle" style="left:65%; animation-duration: 9s;"></div>
+<div class="sparkle" style="left:75%; animation-duration: 7s;"></div>
+<div class="sparkle" style="left:85%; animation-duration: 10s;"></div>
+<div class="sparkle" style="left:95%; animation-duration: 6s;"></div>
+
+<div class="container" id="container">
+  
+  <!-- LOGO PLACEHOLDER -->
+  <!-- Put your logo image in the same folder and update 'logo.png' -->
+  <div class="logo">
+    <img src="logo.png" alt="MoodMate Logo">
+  </div>
+
+  <h1>MoodMate 💜</h1>
+  <p>Your Mood, Your Mate!</p>
+
+  <!-- MOOD QUESTION & BUTTONS -->
+  <div class="mood-question" id="moodQuestion">
+    <p>How are you feeling today? 💡</p>
+    <div class="moods">
+      <button onclick="setMood('happy')">😊 Happy</button>
+      <button onclick="setMood('lazy')">😴 Lazy</button>
+      <button onclick="setMood('cool')">😎 Cool</button>
+      <button onclick="setMood('angry')">😡 Angry</button>
+    </div>
+  </div>
+
+  <!-- RESULT CARD (hidden until button click) -->
+  <div class="card" id="result" style="display: none;"></div>
+
+  <p id="lastMood"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
